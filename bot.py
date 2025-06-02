@@ -11,10 +11,9 @@ from pyrogram.types import Message
 
 # --- LOAD ENV VARS ---
 load_dotenv()
-API_ID = int(os.getenv("API_ID"))
-API_HASH = os.getenv("1898391366167db54389f40cb6f37243")
-BOT_TOKEN = os.getenv("8074621768:AAGcANPuhUJIq1_l3Nu-bfiPIXKrFkmZl9k")
-
+API_ID = int(os.environ.get("API_ID"))       # ✅ Must be set as int
+API_HASH = os.environ.get("API_HASH")        # ✅ 32-char string from my.telegram.org
+BOT_TOKEN = os.environ.get("BOT_TOKEN")      # ✅ From @BotFather
 RECENTS_FILE = "recents.json"
 PLAYLISTS_FILE = "playlists.json"
 
