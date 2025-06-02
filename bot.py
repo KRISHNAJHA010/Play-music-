@@ -1,17 +1,20 @@
-# youtube_music_bot.py
+# bot.py
 
 import os
 import json
 import yt_dlp
 import asyncio
 import random
+from dotenv import load_dotenv
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-# --- CONFIG ---
-API_ID = 12345678  # Replace with your API ID
-API_HASH = "your_api_hash"
-BOT_TOKEN = "your_bot_token"
+# --- LOAD ENV VARS ---
+load_dotenv()
+API_ID = int(os.getenv("21737663"))
+API_HASH = os.getenv("1898391366167db54389f40cb6f37243")
+BOT_TOKEN = os.getenv("8074621768:AAGcANPuhUJIq1_l3Nu-bfiPIXKrFkmZl9k")
+
 RECENTS_FILE = "recents.json"
 PLAYLISTS_FILE = "playlists.json"
 
@@ -118,3 +121,4 @@ app.user_cache = {}
 
 # --- RUN ---
 app.run()
+    
