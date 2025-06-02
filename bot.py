@@ -11,7 +11,7 @@ from pyrogram.types import Message
 # --- CONFIG ---
 API_ID = 21737663  # Replace with your API ID
 API_HASH = "1898391366167db54389f40cb6f37243"
-BOT_TOKEN = "8074621768:AAElHf961FcyqDKR87QXONNH591w2PKJKR8"
+BOT_TOKEN = "8074621768:AAGcANPuhUJIq1_l3Nu-bfiPIXKrFkmZl9k"
 RECENTS_FILE = "recents.json"
 PLAYLISTS_FILE = "playlists.json"
 
