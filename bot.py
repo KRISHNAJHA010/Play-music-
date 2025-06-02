@@ -11,7 +11,7 @@ from pyrogram.types import Message
 
 # --- LOAD ENV VARS ---
 load_dotenv()
-API_ID = int(os.getenv("21737663"))
+API_ID = int(os.getenv("21737663")
 API_HASH = os.getenv("1898391366167db54389f40cb6f37243")
 BOT_TOKEN = os.getenv("8074621768:AAGcANPuhUJIq1_l3Nu-bfiPIXKrFkmZl9k")
 
